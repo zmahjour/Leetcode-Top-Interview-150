@@ -26,8 +26,7 @@ class Solution2(object):
         stack = []
         for char in s:
             if char in bracket_map:
-                last_stack = stack.pop() if stack else None
-                if bracket_map[char] != last_stack:
+                if not stack or stack.pop() != bracket_map[char]:
                     return False
             else:
                 stack.append(char)
