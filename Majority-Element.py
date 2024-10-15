@@ -8,6 +8,7 @@ class Solution1:
                 return num
             
 
+# Best Solution
 class Solution2:
     def majority_element(self, nums):
         candidate = 0
